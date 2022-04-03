@@ -65,3 +65,20 @@ print(XOR(0,1))
 print(XOR(1,0))
 print(XOR(1,1))
 
+#def step_function(x) :
+#    if x > 0:
+#        return 1
+#    else :
+#        return 0
+def step_function(x) :
+    y = x>0
+    return y.astype(np.int)
+print('-------astype-------')
+x = np.array([-1.0,1.0,2.0])
+y = x>0
+print(y)
+y = y.astype(np.int)
+print(y)
+
+
+
