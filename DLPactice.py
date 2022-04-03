@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pylab as plt
 
 x = np.array([0,1])
 w = np.array([0.5,0.5])
@@ -70,15 +71,42 @@ print(XOR(1,1))
 #        return 1
 #    else :
 #        return 0
-def step_function(x) :
-    y = x>0
-    return y.astype(np.int)
+#def step_function(x) :
+#    y = x>0
+#    return y.astype(np.int)
 print('-------astype-------')
 x = np.array([-1.0,1.0,2.0])
 y = x>0
 print(y)
 y = y.astype(int)
 print(y)
+
+def step_function(x) :
+    return np.array(x>0,dtype = int)
+x = np.arange(-5.0,5.0,0.1)
+y = step_function(x)
+plt.plot(x,y)
+plt.ylim(-0.1,1.1)
+print(plt.show())
+
+print('-----def sigmoid-----------')
+
+def sigmoid(x):
+    return 1/(1+np.exp(-x))
+
+x = np.array([-1.0,1.0,2.0])
+print(sigmoid(x))
+
+t = np.array([1.0,2.0,3.0])
+print(t+1)
+
+x = np.arange(-5.0,5.0,0.1)
+y = sigmoid(x)
+plt.plot(x,y)
+plt.ylim(-0.1,1.1)
+print(plt.show())
+
+
 
 
 
