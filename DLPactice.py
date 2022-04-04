@@ -107,6 +107,15 @@ plt.ylim(-0.1,1.1)
 print(plt.show())
 print(plt.show())
 
+print('-----ReLU function -----')
+
+def relu (x) :
+    return np.maximum(0,x)
+
+print(relu(-1))
+print(relu(1))
+print(relu(10))
+
 
 
 
