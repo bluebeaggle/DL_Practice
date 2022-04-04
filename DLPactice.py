@@ -105,6 +105,7 @@ y = sigmoid(x)
 plt.plot(x,y)
 plt.ylim(-0.1,1.1)
 print(plt.show())
+print(plt.show())
 
 
 
