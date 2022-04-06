@@ -1,4 +1,7 @@
 import numpy as np
+import sys, os
+sys.path.append(os.pardir)
+form dataset.mnist import load_mnist
 
 
 a = np.array([0.3,2.9,4.0])
