@@ -69,3 +69,13 @@ for i in range(len(x)):
 
 print("Accuracy:"+str(float(accuracy_cnt) / len(x)))
 
+x,_ = get_data()
+network = init_network()
+W1,W2,W3 = network['W1'],network['W2'],network['W3']
+
+print(x.shape)
+print(x[0].shape)
+print(W1.shape)
+print(W2.shape)
+print(W3.shape)
+
